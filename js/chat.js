@@ -4,7 +4,7 @@ const wsUri = "wss://socketsbay.com/wss/v2/1/137dd49667bf3ab48d12d9eae8ce1f07/";
 
 let chatSocket = new WebSocket(wsUri)
 
-chatSocket.onopen = function (event) {
+chatSocket.onopen = function(event) {
     chat.append(showMsg('socket is open', 'open'))
 
     // chat.innerHTML += showMsg('socket is open', 'open')
